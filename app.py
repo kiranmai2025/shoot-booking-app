@@ -4,7 +4,7 @@ import os
 import json
 from google.oauth2.service_account import Credentials
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 # Defines permissions for accessing Google Sheets and Drive
 SCOPE = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
@@ -30,7 +30,7 @@ def index():
         sheet.append_row([name, phone, stype])
         
         return "<h1>Booking Success! We will call you soon.</h1>"
-    return render_template('templates/index.html')
+    return render_template('/index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
