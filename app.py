@@ -30,7 +30,7 @@ def index():
         sheet.append_row([name, phone, stype])
         
         return "<h1>Booking Success! We will call you soon.</h1>"
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
