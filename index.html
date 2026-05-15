@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #2d2d2d; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); width: 90%; max-width: 350px; text-align: center; }
+        input, button { width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; border: none; font-size: 16px; }
+        input { background: #404040; color: white; }
+        button { background: #e63946; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #ff4d5a; transform: scale(1.02); }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>📸 LensBook</h1>
+        <p>Book your professional shoot</p>
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" name="phone" placeholder="Mobile Number" required>
+            <input type="text" name="stype" placeholder="Shoot Type (e.g. Wedding)">
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+</body>
+</html>
